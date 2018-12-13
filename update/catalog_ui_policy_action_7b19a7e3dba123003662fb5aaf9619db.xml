@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Fix a Data Issue or Ask a Data Question">d0960112dbc9eb00c27f776baf9619c3</catalog_item>
+        <catalog_variable>IO:5fa467abdb6123003662fb5aaf9619a8</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-09 22:08:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7b19a7e3dba123003662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glossary_request</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_7b19a7e3dba123003662fb5aaf9619db</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-09 22:08:01</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show Link to Business Glossary Request">dcd86fa3dba123003662fb5aaf96198b</ui_policy>
+        <variable>glossary_request</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

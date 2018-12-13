@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item">
+    <sc_cat_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="Data Services">2208f940db416300c27f776baf96190b</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Use this form to make a request for a new term to be added or changed in the business glossary.&nbsp; The typical response turnaround time is approximately 2 weeks.</p>
+<p>If you have other data related issues please use the&nbsp;<a title="Fix a Data Issue" href="https://psedev.service-now.com/sp?id=sc_cat_item&amp;sys_id=d0960112dbc9eb00c27f776baf9619c3&amp;sysparm_category=2208f940db416300c27f776baf96190b" target="_blank">Fix a Data Issue</a> form.</p>
+<p>To search for existing glossary terms use the&nbsp;<a title="Metapedia" href="https://psedev.service-now.com" target="_blank">Metapedia</a> application.</p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Add or Change a Business Glossary Term</name>
+        <no_cart>true</no_cart>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_search>false</no_search>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=b3e3bd0adbc263803662fb5aaf961965&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <short_description>Add or Change a Business Glossary Term</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-29 18:16:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b3e3bd0adbc263803662fb5aaf961965</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Add or Change a Business Glossary Term</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>sc_cat_item_b3e3bd0adbc263803662fb5aaf961965</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-06 18:56:08</sys_updated_on>
+        <template/>
+        <type>item</type>
+        <u_change_approval_needed>false</u_change_approval_needed>
+        <u_manager_approval_needed>false</u_manager_approval_needed>
+        <u_use_item_task_stages>true</u_use_item_task_stages>
+        <u_use_workflow_stages>false</u_use_workflow_stages>
+        <u_variable_report/>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow display_value="Business Glossary Request">4284b54edbc263803662fb5aaf96197c</workflow>
+    </sc_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3e3bd0adbc263803662fb5aaf961965"/>
+    <fx_price action="delete_multiple" query="id=b3e3bd0adbc263803662fb5aaf961965"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>b3e3bd0adbc263803662fb5aaf961965</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-29 18:16:21</sys_created_on>
+        <sys_id>97f3390edbc263803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-29 18:16:21</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>b3e3bd0adbc263803662fb5aaf961965</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-29 18:16:21</sys_created_on>
+        <sys_id>5bf3390edbc263803662fb5aaf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-29 18:16:21</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#71c1</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>icon</file_name>
+        <image_height>44</image_height>
+        <image_width>36</image_width>
+        <size_bytes>1206</size_bytes>
+        <size_compressed>1061</size_compressed>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:29</sys_created_on>
+        <sys_id>bd862658db5663c03662fb5aaf9619d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:43:29</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item</table_name>
+        <table_sys_id>b3e3bd0adbc263803662fb5aaf961965</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="bd862658db5663c03662fb5aaf9619d7">bd862658db5663c03662fb5aaf9619d7</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:29</sys_created_on>
+        <sys_id>fd862658db5663c03662fb5aaf9619d7</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>nZF9UJN1HMB/z549bOwFtrEHQQUDhsrKKx2RcZw7wI1mdykoyjiRA3lpLONNIG2wRiVCRjIIQiIhHglYVwFO1JkLebUoWiLvdwg4at5pDEQC5n4983r5pz+qz/f73/flvp/7wlF4B3D2SGVSgCAIqCQDwAkQDlAKxZEkVDIxOoZRqRiDRnOisxgsFpPBZLJdeBy2C9eFyeS4c7hufBzHWa7rPNz5Hjw+zncsQVByhoo5Y5gzn81k8/8z8BvApYNngABFfAGFi6BcBHaDTQAgGPIE8AcIhbzRiUZ3ZjDJBj0HUBAUpVBRx9VkNZ+sAyoX4/lsD3Vyi0yg+Wbyd2jK6ul+Ya2deJRpXiBKzCp0Zriv8/Bc7795y9YAYeDzQS/sfDE4fLdEGvGSbM/+A9EHD8XIY48mJaekvqpIyz6ek5v3xomTb7/z7qmi08Ul2vKKDyurPqo+92kDcaHxs6bmlrb2i/pLHZevXL3R1d3T29d/89ufbg3dHh4ZHRufnpm9a577+RfLPevC4sOlR8u/raw6vBCAIn/yj15c0otCpaJUmsMLoeQ5GrhUzGe7Ey80kpaQ6ea7Q0Pnh5XVt3Y6+4mi5vHELBPDXRA47W91qD0x+3dihf/L7C+xv73GAQtFyOehXCAGi1OnIeDqjSXeQuPwksHywHy5migNEPg/FVYQYzop1Gg0lsN6/qGHt4MzL+D0pwXqbUPNwe3ZNYb8sAoewcmQ+OMpqSPiTeI012Ix2+67S1On1B0lJizDbNbmHzxdB5VurZP9spVqg+lI/Fqc+mZKjb0zNs+ulUhUc/GVd1oSAl45njhRYjDHfe3aOJAdkhOSHBN2TRuVe3jQ2DwzFCnJ91z0kfD30S7aR9QL8kYIvjpYCwFRZoq4nweB/7n0NUwxtSrzwufM5x8cUN8w+g19L57SqYvtqYR9EILWU+VW0bSqQGT1NjTLezJSnxtT5M7Ion1zpf3jAwPyDXTdJ7WynnQIunxsQgjqjN3nbYIvIVhh1D0mQhQz6WNFfSLLlIstPK9BEdzuJY0Liqm7UuiZJDBq26QT/LKP0ckRLTmuVKVCUP8dBAG58baU67GB2WdyrIHKWLdh4SPFrg8mq+byk3RJoxsSlPteJwLL9beULcuzK95dELCK5nX2Qgh46nmtEYK7wujHZwtwA7be2H2mvFS1pYA295quTz2tvy6C4EczBBWGZ+2iCFtQR696daNxoSoZgt40CNoXjSsQQFCuXvYT39/4nl0DwcJe+72X19JGG2usa9Ht71c3dLS1Fsuvnr1kemuvWXJisEQl/1y1f+SLa5KZY6FL7COzabIMv9JtnRyhraleCrwwfGmnMKsrodnU9OtWotZAqBqDicyYFr1FJ406Fv9mkBqO/Q5ZqKpgtgQAAA==</data>
+        <length>1404</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="bd862658db5663c03662fb5aaf9619d7">bd862658db5663c03662fb5aaf9619d7</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:29</sys_created_on>
+        <sys_id>71862658db5663c03662fb5aaf9619d8</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#71c1</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>picture</file_name>
+        <image_height>44</image_height>
+        <image_width>36</image_width>
+        <size_bytes>1206</size_bytes>
+        <size_compressed>1061</size_compressed>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:19</sys_created_on>
+        <sys_id>e77666d0db5663c03662fb5aaf9619ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:43:19</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item</table_name>
+        <table_sys_id>b3e3bd0adbc263803662fb5aaf961965</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="e77666d0db5663c03662fb5aaf9619ef">e77666d0db5663c03662fb5aaf9619ef</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:19</sys_created_on>
+        <sys_id>2b7666d0db5663c03662fb5aaf9619ef</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>nZF9UJN1HMB/z549bOwFtrEHQQUDhsrKKx2RcZw7wI1mdykoyjiRA3lpLONNIG2wRiVCRjIIQiIhHglYVwFO1JkLebUoWiLvdwg4at5pDEQC5n4983r5pz+qz/f73/flvp/7wlF4B3D2SGVSgCAIqCQDwAkQDlAKxZEkVDIxOoZRqRiDRnOisxgsFpPBZLJdeBy2C9eFyeS4c7hufBzHWa7rPNz5Hjw+zncsQVByhoo5Y5gzn81k8/8z8BvApYNngABFfAGFi6BcBHaDTQAgGPIE8AcIhbzRiUZ3ZjDJBj0HUBAUpVBRx9VkNZ+sAyoX4/lsD3Vyi0yg+Wbyd2jK6ul+Ya2deJRpXiBKzCp0Zriv8/Bc7795y9YAYeDzQS/sfDE4fLdEGvGSbM/+A9EHD8XIY48mJaekvqpIyz6ek5v3xomTb7/z7qmi08Ul2vKKDyurPqo+92kDcaHxs6bmlrb2i/pLHZevXL3R1d3T29d/89ufbg3dHh4ZHRufnpm9a577+RfLPevC4sOlR8u/raw6vBCAIn/yj15c0otCpaJUmsMLoeQ5GrhUzGe7Ey80kpaQ6ea7Q0Pnh5XVt3Y6+4mi5vHELBPDXRA47W91qD0x+3dihf/L7C+xv73GAQtFyOehXCAGi1OnIeDqjSXeQuPwksHywHy5migNEPg/FVYQYzop1Gg0lsN6/qGHt4MzL+D0pwXqbUPNwe3ZNYb8sAoewcmQ+OMpqSPiTeI012Ix2+67S1On1B0lJizDbNbmHzxdB5VurZP9spVqg+lI/Fqc+mZKjb0zNs+ulUhUc/GVd1oSAl45njhRYjDHfe3aOJAdkhOSHBN2TRuVe3jQ2DwzFCnJ91z0kfD30S7aR9QL8kYIvjpYCwFRZoq4nweB/7n0NUwxtSrzwufM5x8cUN8w+g19L57SqYvtqYR9EILWU+VW0bSqQGT1NjTLezJSnxtT5M7Ion1zpf3jAwPyDXTdJ7WynnQIunxsQgjqjN3nbYIvIVhh1D0mQhQz6WNFfSLLlIstPK9BEdzuJY0Liqm7UuiZJDBq26QT/LKP0ckRLTmuVKVCUP8dBAG58baU67GB2WdyrIHKWLdh4SPFrg8mq+byk3RJoxsSlPteJwLL9beULcuzK95dELCK5nX2Qgh46nmtEYK7wujHZwtwA7be2H2mvFS1pYA295quTz2tvy6C4EczBBWGZ+2iCFtQR696daNxoSoZgt40CNoXjSsQQFCuXvYT39/4nl0DwcJe+72X19JGG2usa9Ht71c3dLS1Fsuvnr1kemuvWXJisEQl/1y1f+SLa5KZY6FL7COzabIMv9JtnRyhraleCrwwfGmnMKsrodnU9OtWotZAqBqDicyYFr1FJ406Fv9mkBqO/Q5ZqKpgtgQAAA==</data>
+        <length>1404</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="e77666d0db5663c03662fb5aaf9619ef">e77666d0db5663c03662fb5aaf9619ef</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:19</sys_created_on>
+        <sys_id>ab7666d0db5663c03662fb5aaf9619ef</sys_id>
+    </sys_attachment_doc>
+</record_update>

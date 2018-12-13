@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+	 var c = this;
+	 //c.title = "My Widget";
+	 c.title = 'Please upload screen shots as applicable.';
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Link to Business Glossary Request</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Link to Business Glossary Request</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-09 21:52:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2db5ab2fdb6123003662fb5aaf961911</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Link to Business Glossary Request</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>sp_widget_2db5ab2fdb6123003662fb5aaf961911</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-09 22:09:37</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th, {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  	color: white;
+  	background-color: #3399ff;
+}
+
+</style>
+</head>
+<body>
+  
+  <a href="https://psedev.service-now.com/sp?id=sc_cat_item&sys_id=d728f940db416300c27f776baf961910&sysparm_category=2208f940db416300c27f776baf96190b">Click Here to open the Business Glossary Request</a>
+
+
+
+</body>
+</html>]]></template>
+    </sp_widget>
+</record_update>

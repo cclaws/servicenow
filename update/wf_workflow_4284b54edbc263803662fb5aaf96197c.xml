@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["6f307b17db46ab803662fb5aaf9619c9"],"subflows":[],"stages":{"9b303fd3db46ab803662fb5aaf96196d":{"order":200,"duration":"","stageId":"9b303fd3db46ab803662fb5aaf96196d","name":"Evaluation &amp; Approval","value":"evaluation"},"1f303fd3db46ab803662fb5aaf96196d":{"order":100,"duration":"","stageId":"1f303fd3db46ab803662fb5aaf96196d","name":"Approved","value":"approved"},"9f303fd3db46ab803662fb5aaf96196d":{"order":300,"duration":"","stageId":"9f303fd3db46ab803662fb5aaf96196d","name":"Cancelled","value":"cancelled"},"d7303fd3db46ab803662fb5aaf96196d":{"order":400,"duration":"","stageId":"d7303fd3db46ab803662fb5aaf96196d","name":"Ready For Export","value":"ready_for_export"}},"activities":{"27307b17db46ab803662fb5aaf9619c6":"1f303fd3db46ab803662fb5aaf96196d","5b303fd3db46ab803662fb5aaf96196e":"9f303fd3db46ab803662fb5aaf96196d","23307b17db46ab803662fb5aaf9619de":"9f303fd3db46ab803662fb5aaf96196d","5b307b17db46ab803662fb5aaf9619c0":"d7303fd3db46ab803662fb5aaf96196d","ab307b17db46ab803662fb5aaf9619c7":"1f303fd3db46ab803662fb5aaf96196d","5b307b17db46ab803662fb5aaf9619c1":"9b303fd3db46ab803662fb5aaf96196d","a7307b17db46ab803662fb5aaf9619d8":"9b303fd3db46ab803662fb5aaf96196d"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Process to review  new, change, or delete of business terms</description>
+        <expected_sequences>2f307b17db46ab803662fb5aaf9619ca,a7307b17db46ab803662fb5aaf9619d8,5b307b17db46ab803662fb5aaf9619c1,ab307b17db46ab803662fb5aaf9619c7,27307b17db46ab803662fb5aaf9619c6,5b307b17db46ab803662fb5aaf9619c0,6f307b17db46ab803662fb5aaf9619c9</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>2f307b17db46ab803662fb5aaf9619ca,a7307b17db46ab803662fb5aaf9619d8,5b307b17db46ab803662fb5aaf9619c1,ab307b17db46ab803662fb5aaf9619c7,23307b17db46ab803662fb5aaf9619de,27307b17db46ab803662fb5aaf9619c6,5b303fd3db46ab803662fb5aaf96196e,5b307b17db46ab803662fb5aaf9619c0,6f307b17db46ab803662fb5aaf9619c9</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Business Glossary Request</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">2f307b17db46ab803662fb5aaf9619ca</start>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5b303fd3db46ab803662fb5aaf96196b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:37:47</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Business Glossary Request">4284b54edbc263803662fb5aaf96197c</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Process to review  new, change, or delete of business terms</description>
+        <name>Business Glossary Request</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-29 18:18:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4284b54edbc263803662fb5aaf96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Business Glossary Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>wf_workflow_4284b54edbc263803662fb5aaf96197c</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-29 18:18:43</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>1f303fd3db46ab803662fb5aaf96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>approved</value>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9f303fd3db46ab803662fb5aaf96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>cancelled</value>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Evaluation &amp; Approval</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9b303fd3db46ab803662fb5aaf96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>evaluation</value>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Ready For Export</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>d7303fd3db46ab803662fb5aaf96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>ready_for_export</value>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Submitted</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>13303fd3db46ab803662fb5aaf96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>submitted</value>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - Group">354e911f0a0a029a00e6a0e6ad74206f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approve Request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Evaluation &amp; Approval">9b303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5b307b17db46ab803662fb5aaf9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>444</x>
+        <y>29</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5b307b17db46ab803662fb5aaf9619c1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>13307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>17307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>1b307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       var answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>53307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>57307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
+//&#13;
+// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
+// returning the overall approval state for all of the group(s).&#13;
+//&#13;
+// When called, the following variables are available to the script:&#13;
+//&#13;
+//    Overall for all of the groups that are part of this approval activity:&#13;
+//        counts.total = total number of groups that are part of this approval&#13;
+//        counts.approved = # of groups that approved so far&#13;
+//        counts.rejected = # of groups that rejected so far&#13;
+//        counts.requested = # of groups that are pending approval&#13;
+//        counts.not_requested = # of groups that are not pending approval&#13;
+//        counts.not_required = # of groups that approval is not required&#13;
+//&#13;
+//    And for each group:&#13;
+//        groups[group_id].total = total number of users that are part of this group's approval&#13;
+//        groups[group_id].approved = # of users that approved so far&#13;
+//        groups[group_id].rejected = # of users that rejected so far&#13;
+//        groups[group_id].requested = # of users that are pending approval&#13;
+//        groups[group_id].not_requested = # of users that are not pending approval&#13;
+//        groups[group_id].not_required = # of users that approval is not required&#13;
+//&#13;
+//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
+//&#13;
+//        Note: Iterate the groups using:&#13;
+//            for (var id in groups) {&#13;
+//                 var group = groups[id];&#13;
+//                 ...  group.total ...&#13;
+//            }&#13;
+</value>
+        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5f307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>any_each</value>
+        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>93307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>97307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9b307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9f307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>d3307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>d7307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>db307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>795eaf6bdba123003662fb5aaf961909</value>
+        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>df307b17db46ab803662fb5aaf9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9b307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">1bd4c8c00a0a0b26635e191420fd194c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>any_each</value>
+        <variable display_value="">0698d53c0a0a0b2627f7cf654de211b6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>df307b17db46ab803662fb5aaf9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a89323c0a80066046c6c1fd0df6475</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a29434c0a80066575097078b386f8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>9f307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ac8459c0a8006628d8903b8b2e579b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>db307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>795eaf6bdba123003662fb5aaf961909</value>
+        <variable display_value="">c35dc8950a0a0ba96248a70936f964a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>17307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">4fc0fabe0a6a803f7f0af58179445dbb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>d3307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8abc43ac0a800664b9b89a9f3f2c7a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>97307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8aaecf5c0a8006617527ddc62f2d668</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>d7307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a5b2aac0a80066020adf74bd35c283</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>13307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8a63d44c0a8006617a1a568e6ee0d9e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5f307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a8a7bc7dc0a800666777a9bd9b84fef8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ae0641c0a800664ae7b95978e88d56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>1b307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">a8ad144ec0a8006638755cb3662df229</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>53307b17db46ab803662fb5aaf9619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a8a16056c0a800660449c1bbc94d797f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>57307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the overall approval status for this approval.&#13;
+//&#13;
+// This script is responsible for setting the approval state for each group that is part of this approval activity before&#13;
+// returning the overall approval state for all of the group(s).&#13;
+//&#13;
+// When called, the following variables are available to the script:&#13;
+//&#13;
+//    Overall for all of the groups that are part of this approval activity:&#13;
+//        counts.total = total number of groups that are part of this approval&#13;
+//        counts.approved = # of groups that approved so far&#13;
+//        counts.rejected = # of groups that rejected so far&#13;
+//        counts.requested = # of groups that are pending approval&#13;
+//        counts.not_requested = # of groups that are not pending approval&#13;
+//        counts.not_required = # of groups that approval is not required&#13;
+//&#13;
+//    And for each group:&#13;
+//        groups[group_id].total = total number of users that are part of this group's approval&#13;
+//        groups[group_id].approved = # of users that approved so far&#13;
+//        groups[group_id].rejected = # of users that rejected so far&#13;
+//        groups[group_id].requested = # of users that are pending approval&#13;
+//        groups[group_id].not_requested = # of users that are not pending approval&#13;
+//        groups[group_id].not_required = # of users that approval is not required&#13;
+//&#13;
+//        groups[group_id].approvalIDs[state] = array of user ids that are at the specified approval state&#13;
+//&#13;
+//        Note: Iterate the groups using:&#13;
+//            for (var id in groups) {&#13;
+//                 var group = groups[id];&#13;
+//                 ...  group.total ...&#13;
+//            }&#13;
+</value>
+        <variable display_value="">069e81530a0a0b264289c1e23fe52558</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>93307b17db46ab803662fb5aaf9619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">069bd78c0a0a0b267fa35f3d77e02a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c1</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of group ids or an array of group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       var answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">069c53740a0a0b260e35ee0ead2dbbcc</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approve Request">5b307b17db46ab803662fb5aaf9619c1</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586cdc4c0a0a0b5c00888cdfcb07778b</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approve Request">5b307b17db46ab803662fb5aaf9619c1</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586d9d960a0a0b5c00509314d15d50d8</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Ready For Export">d7303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5b307b17db46ab803662fb5aaf9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>1462</x>
+        <y>398</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5b307b17db46ab803662fb5aaf9619c0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>db307b17db46ab803662fb5aaf9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>state=3^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b307b17db46ab803662fb5aaf9619c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>db307b17db46ab803662fb5aaf9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>state=3^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approved">5b307b17db46ab803662fb5aaf9619c0</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>53307b17db46ab803662fb5aaf9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approved Glossary term request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Approved">1f303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>846</x>
+        <y>46</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ab307b17db46ab803662fb5aaf9619c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>23307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>${u_requester}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Number: ${number}  Has Been Approved.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Your Request Has Been Approved</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e3307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>23307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>${u_requester}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Your Request Has Been Approved</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Number: ${number}  Has Been Approved.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e3307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab307b17db46ab803662fb5aaf9619c7</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approved Glossary term request">ab307b17db46ab803662fb5aaf9619c7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e7307b17db46ab803662fb5aaf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2f307b17db46ab803662fb5aaf9619ca"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">2f307b17db46ab803662fb5aaf9619ca</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Cancelled Request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Cancelled">9f303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>5b303fd3db46ab803662fb5aaf96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>1282</x>
+        <y>562</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5b303fd3db46ab803662fb5aaf96196e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b303fd3db46ab803662fb5aaf96196e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>13307b17db46ab803662fb5aaf9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>state=4^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5b303fd3db46ab803662fb5aaf96196e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>13307b17db46ab803662fb5aaf9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>state=4^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Cancelled Request">5b303fd3db46ab803662fb5aaf96196e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>df307b17db46ab803662fb5aaf9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Business Glossary Entry</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Approved">1f303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>27307b17db46ab803662fb5aaf9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>1329</x>
+        <y>42</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=27307b17db46ab803662fb5aaf9619c6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27307b17db46ab803662fb5aaf9619c6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>//code goes here...&#13;
+var gr = new GlideRecord('x_puse_business_gl_business_glossary_term');&#13;
+gr.initialize();&#13;
+gr.term_name = current.variables.term_name;&#13;
+gr.term_description_definition = current.variables.term_description_definition;&#13;
+gr.business_value_purpose = current.variables.business_value_purpose;&#13;
+gr.data_domain_and_or_sub_domain = current.variables.data_domain_and_or_sub_domain;&#13;
+gr.synonym_and_or_screen_name = current.variables.synonym_and_or_screen_name;&#13;
+gr.term_alias_name_or_synonym = current.variables.term_alias_name_or_synonym;&#13;
+gr.acronym = current.variables.acronym;&#13;
+gr.term_status = current.variables.term_status;&#13;
+gr.notes = 	current.variables.notes;&#13;
+gr.insert();&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27307b17db46ab803662fb5aaf9619c6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>//code goes here...&#13;
+var gr = new GlideRecord('x_puse_business_gl_business_glossary_term');&#13;
+gr.initialize();&#13;
+gr.term_name = current.variables.term_name;&#13;
+gr.term_description_definition = current.variables.term_description_definition;&#13;
+gr.business_value_purpose = current.variables.business_value_purpose;&#13;
+gr.data_domain_and_or_sub_domain = current.variables.data_domain_and_or_sub_domain;&#13;
+gr.synonym_and_or_screen_name = current.variables.synonym_and_or_screen_name;&#13;
+gr.term_alias_name_or_synonym = current.variables.term_alias_name_or_synonym;&#13;
+gr.acronym = current.variables.acronym;&#13;
+gr.term_status = current.variables.term_status;&#13;
+gr.notes = 	current.variables.notes;&#13;
+gr.insert();&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Business Glossary Entry">27307b17db46ab803662fb5aaf9619c6</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6f307b17db46ab803662fb5aaf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>1505</x>
+        <y>856</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=6f307b17db46ab803662fb5aaf9619c9"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Rejected Notification</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Cancelled">9f303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>23307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>720</x>
+        <y>301</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=23307b17db46ab803662fb5aaf9619de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>${u_requester}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Number: ${number} Has Been Rejected.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Your Request Has Been Rejected</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>${u_requester}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Your Request Has Been Rejected</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Number: ${number} Has Been Rejected.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23307b17db46ab803662fb5aaf9619de</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Rejected Notification">23307b17db46ab803662fb5aaf9619de</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e7307b17db46ab803662fb5aaf9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Catalog Task">38891b6f0a0a0b1e00efdfdd77602027</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Review Task</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Evaluation &amp; Approval">9b303fd3db46ab803662fb5aaf96196d</stage>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+        <x>211</x>
+        <y>31</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a7307b17db46ab803662fb5aaf9619d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>23307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8f630a2cc0a80066385b16d90585802d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>27307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c360af110a0a0ba97c533f11e09f464f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6c1eb6c0a8006633bb0f81ef62d520</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f6e527c0a801650053e44a74e34315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>acronym,business_value_purpose,data_domain_and_or_sub_domain,notes,synonym_and_or_screen_name,term_alias_name_or_synonym,term_description_definition,term_name,term_status</value>
+        <variable display_value="">acb99baa0a0a0ba300d0938182192ad4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="">d7eb710cc0a80165001dace00d26aee0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f68b111c0a800662a07dc10fa198c4f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6d4120c0a8006655edc4495deb43ab</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>795eaf6bdba123003662fb5aaf961909</value>
+        <variable display_value="">d7f2bd33c0a801650021da8ff242a081</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1660</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>task.assigned_to = current.assigned_to;&#13;
+</value>
+        <variable display_value="">98b96f90c0a800666b58ec516f330397</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f722677c0a800664d3a879fadd87bfc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6f307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c360b4100a0a0ba97c533f1148325820</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1650</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">98b91165c0a800665c43a410b6f29fe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">d7ee92ddc0a8016500b307a89bbf3db1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7ec9d5cc0a8016500a4ed439b25f438</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c360b80b0a0a0ba97c533f11a0c9814c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Review Glossary Term</value>
+        <variable display_value="">d7f61655c0a8016500793dd16da8beff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f5ec60dc0a800667063095e6702d1ee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e3307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f3c998c0a8016500d0204c0005453b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e7307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8f79bbdbc0a80066479b2d5ea4863c24</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f79afac0a80165001b98ae987d06a5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6728b4c0a80066478f02b692654b58</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f63ae0fc0a80066697c832ba44df4e1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6814cfc0a8006605477949c2fa6e6e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="">d7eb710cc0a80165001dace00d26aee0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7ec9d5cc0a8016500a4ed439b25f438</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>27307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c360af110a0a0ba97c533f11e09f464f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f5ec60dc0a800667063095e6702d1ee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c360b80b0a0a0ba97c533f11a0c9814c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f722677c0a800664d3a879fadd87bfc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>23307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8f630a2cc0a80066385b16d90585802d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f63ae0fc0a80066697c832ba44df4e1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6728b4c0a80066478f02b692654b58</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6814cfc0a8006605477949c2fa6e6e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f68b111c0a800662a07dc10fa198c4f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6c1eb6c0a8006633bb0f81ef62d520</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8f6d4120c0a8006655edc4495deb43ab</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">d7ee92ddc0a8016500b307a89bbf3db1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>795eaf6bdba123003662fb5aaf961909</value>
+        <variable display_value="">d7f2bd33c0a801650021da8ff242a081</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e3307b17db46ab803662fb5aaf9619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f3c998c0a8016500d0204c0005453b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>af307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>Review Glossary Term</value>
+        <variable display_value="">d7f61655c0a8016500793dd16da8beff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2b307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f6e527c0a801650053e44a74e34315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>eb307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">d7f79afac0a80165001b98ae987d06a5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6f307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c360b4100a0a0ba97c533f1148325820</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1650</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a3307b17db46ab803662fb5aaf9619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">98b91165c0a800665c43a410b6f29fe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1660</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>task.assigned_to = current.assigned_to;&#13;
+</value>
+        <variable display_value="">98b96f90c0a800666b58ec516f330397</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>2f307b17db46ab803662fb5aaf9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>acronym,business_value_purpose,data_domain_and_or_sub_domain,notes,synonym_and_or_screen_name,term_alias_name_or_synonym,term_description_definition,term_name,term_status</value>
+        <variable display_value="">acb99baa0a0a0ba300d0938182192ad4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7307b17db46ab803662fb5aaf9619d8</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e7307b17db46ab803662fb5aaf9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8f79bbdbc0a80066479b2d5ea4863c24</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Review Task">a7307b17db46ab803662fb5aaf9619d8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e7307b17db46ab803662fb5aaf9619df</condition>
+        <from display_value="Rejected Notification">23307b17db46ab803662fb5aaf9619de</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>63307b17db46ab803662fb5aaf9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Cancelled Request">5b303fd3db46ab803662fb5aaf96196e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">ab307b17db46ab803662fb5aaf9619c5</condition>
+        <from display_value="Approve Request">5b307b17db46ab803662fb5aaf9619c1</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>67307b17db46ab803662fb5aaf9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Approved Glossary term request">ab307b17db46ab803662fb5aaf9619c7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a3307b17db46ab803662fb5aaf9619c7</condition>
+        <from display_value="Create Business Glossary Entry">27307b17db46ab803662fb5aaf9619c6</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6b307b17db46ab803662fb5aaf9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Approved">5b307b17db46ab803662fb5aaf9619c0</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">df307b17db46ab803662fb5aaf9619bf</condition>
+        <from display_value="Cancelled Request">5b303fd3db46ab803662fb5aaf96196e</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>6f307b17db46ab803662fb5aaf9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="End">6f307b17db46ab803662fb5aaf9619c9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">af307b17db46ab803662fb5aaf9619d7</condition>
+        <from display_value="Begin">2f307b17db46ab803662fb5aaf9619ca</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>a7307b17db46ab803662fb5aaf9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Review Task">a7307b17db46ab803662fb5aaf9619d8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e7307b17db46ab803662fb5aaf9619c9</condition>
+        <from display_value="Approved Glossary term request">ab307b17db46ab803662fb5aaf9619c7</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Create Business Glossary Entry">27307b17db46ab803662fb5aaf9619c6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">6b307b17db46ab803662fb5aaf9619dd</condition>
+        <from display_value="Review Task">a7307b17db46ab803662fb5aaf9619d8</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ab307b17db46ab803662fb5aaf9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Approve Request">5b307b17db46ab803662fb5aaf9619c1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">2f307b17db46ab803662fb5aaf9619c5</condition>
+        <from display_value="Approve Request">5b307b17db46ab803662fb5aaf9619c1</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>e3307b17db46ab803662fb5aaf9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="Rejected Notification">23307b17db46ab803662fb5aaf9619de</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">53307b17db46ab803662fb5aaf9619c1</condition>
+        <from display_value="Approved">5b307b17db46ab803662fb5aaf9619c0</from>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>ef307b17db46ab803662fb5aaf9619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <to display_value="End">6f307b17db46ab803662fb5aaf9619c9</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>PA-zkaret</sys_created_by>
+        <sys_created_on>2018-12-04 00:31:37</sys_created_on>
+        <sys_id>1f303fd3db46ab803662fb5aaf96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-zkaret</sys_updated_by>
+        <sys_updated_on>2018-12-04 00:31:37</sys_updated_on>
+        <workflow_version display_value="Business Glossary Request">5b303fd3db46ab803662fb5aaf96196b</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=4284b54edbc263803662fb5aaf96197c^sys_id!=5b303fd3db46ab803662fb5aaf96196b">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Business Glossary Term" max_length="40" name="x_puse_business_gl_business_glossary_term" type="collection">
+        <element label="Acronym" max_length="100" name="acronym" type="string"/>
+        <element label="Business Value / Purpose" max_length="1000" name="business_value_purpose" type="string"/>
+        <element choice="1" label="Data Domain and/or Sub Domain" mandatory="true" max_length="40" name="data_domain_and_or_sub_domain" type="choice">
+            <choice>
+                <element label="Finance" value="finance"/>
+                <element label="Human Resources" value="human_resources"/>
+                <element label="Customer" sequence="100" value="customer"/>
+                <element label="Asset: Meter" sequence="200" value="asset_meter"/>
+                <element label="Asset: Operations" sequence="300" value="asset_operations"/>
+                <element label="Asset: Load / Transmission" sequence="400" value="asset_load_transmission"/>
+            </choice>
+        </element>
+        <element label="Notes" max_length="8000" name="notes" type="html"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Synonym and/or Screen Name" max_length="100" name="synonym_and_or_screen_name" type="string"/>
+        <element label="Term Alias Name or Synonym" max_length="100" name="term_alias_name_or_synonym" type="string"/>
+        <element label="Term Description / Definition" mandatory="true" max_length="8000" name="term_description_definition" type="html"/>
+        <element label="Term Name" mandatory="true" max_length="100" name="term_name" type="string"/>
+        <element choice="1" display="true" label="Term Status" max_length="40" name="term_status" type="choice">
+            <choice>
+                <element label="1. Add" value="add"/>
+                <element label="2. Change" value="change"/>
+                <element label="3. Delete" value="delete"/>
+            </choice>
+        </element>
+    </element>
+</database>

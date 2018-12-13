@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="term_status" table="x_puse_business_gl_business_glossary_term" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>term_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1. Add</label>
+            <language>en</language>
+            <name>x_puse_business_gl_business_glossary_term</name>
+            <sequence/>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-10-04 20:17:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>78b6bdccdb016300c27f776baf961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-10-04 20:17:41</sys_updated_on>
+            <value>add</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>term_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2. Change</label>
+            <language>en</language>
+            <name>x_puse_business_gl_business_glossary_term</name>
+            <sequence/>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-10-04 20:17:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a4c6fdccdb016300c27f776baf96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-10-04 20:17:57</sys_updated_on>
+            <value>change</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>term_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3. Delete</label>
+            <language>en</language>
+            <name>x_puse_business_gl_business_glossary_term</name>
+            <sequence/>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-10-04 20:18:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7cd6bdccdb016300c27f776baf961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-10-04 20:18:21</sys_updated_on>
+            <value>delete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>term_status</element>
+            <name>x_puse_business_gl_business_glossary_term</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-10-04 20:17:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b6b63dccdb016300c27f776baf96198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>term_status</sys_name>
+            <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+            <sys_update_name>sys_choice_x_puse_business_gl_business_glossary_term_term_status</sys_update_name>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-10-04 20:17:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

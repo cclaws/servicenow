@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Data Services">2208f940db416300c27f776baf96190b</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Request assistance with a data issue you are having or get an answer to a data question.&nbsp; An incident record will be created and managed through successful resolution.</p>
+<p><span style="color: #ff0000;"><strong>If your issue is urgent or a security concern</strong></span>, please call the Service Desk at 425-456-2020 (81-2020).</p>
+<p><strong>If you need to add or change a business glossary term</strong>, please use the&nbsp;<a title="Business Glossary Request" href="https://psedev.service-now.com/sp?id=sc_cat_item&amp;sys_id=b3e3bd0adbc263803662fb5aaf961965&amp;sysparm_category=2208f940db416300c27f776baf96190b" target="_blank">Business Glossary Request</a>&nbsp;form.</p>
+<p><strong>If you need to request access to a report</strong>, please use the&nbsp;<a title="IAM Access Request Portal" href="https://pseaccess.puget.com/sigma/app/index#/home" target="_blank">IAM Access Request Portal</a>.</p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Fix a Data Issue or Ask a Data Question</name>
+        <no_cart>false</no_cart>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_search>false</no_search>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=d0960112dbc9eb00c27f776baf9619c3&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.impact.setValue('3');   //3 - Moderate Populate for SLA
+current.urgency.setValue('3');  //3 - Moderate populate for SLA
+current.state.setValue(2); //Unassigned
+
+if (producer.request_type == 'missing_data'){
+	current.u_category.setValue('1bd4ff7cdbbd2b00c27f776baf9619de'); // Data > Missing Data
+	current.assignment_group.setValue('d286c2a30f3761003e726798b1050e1d'); //SAP - BW
+}
+if (producer.request_type == 'wrong_data') {
+	current.u_category.setValue('d04a33f8dbfd2b00c27f776baf96194f'); // Data > Wrong Data
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
+if (producer.request_type == 'data_lineage') {
+	current.u_category.setValue('740b77f8dbfd2b00c27f776baf96194b'); // Data > Lineage
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
+if (producer.request_type == 'data_mismatch') {
+	current.u_category.setValue('f61b33f8dbfd2b00c27f776baf961953'); // Data > Mismatch
+	current.assignment_group.setValue('d286c2a30f3761003e726798b1050e1d'); //SAP - BW
+}
+if (producer.request_type == 'legacy_data_issues') {
+	current.u_category.setValue('382d7374db316b00c27f776baf96192f'); // Data > Legacy Data
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
+if (producer.request_type == 'data_quality') {
+	current.u_category.setValue('17eebbb4db316b00c27f776baf961905'); // Data > Data Quality
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
+if (producer.request_type == 'question_or_other') {
+	current.u_category.setValue('f38fbf38db316b00c27f776baf961922'); // Data > Other
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
+
+current.description = producer.issue;
+current.comments = 'The issue started at: ' + producer.issue_start_date;
+current.comments = 'The report or screen or system that is being used is: ' + producer.system_using;
+
+if (producer.requested_for!=''){
+	current.caller_id = producer.requested_for;
+	current.u_pse_person_type=producer.requested_for.u_pse_person_type;
+	current.u_call_back_number=producer.requested_for.phone;
+	current.u_contact_email=producer.requested_for.email;
+	current.location=producer.requested_for.location;
+}
+else{
+	current.caller_id = gs.getUserID();
+}
+
+//Reduce Incident Short Description to Length 150 of the comments provided (All gets loaded below this)
+//need to convert producer.comments to a string....in order to apply the methods...
+if (producer.issue.toString().length > 150){
+	current.short_description = producer.issue.toString().substring(0, 100) + '... ';
+}
+else{
+	current.short_description = producer.issue;
+}
+
+gs.addInfoMessage('Thank you for your request.');
+producer.redirect = "catalog_home.do?sysparm_view=catalog_default";]]></script>
+        <short_description>Get answers or fix issues with data</short_description>
+        <show_variable_help_on_load>true</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-10-11 16:37:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d0960112dbc9eb00c27f776baf9619c3</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Fix a Data Issue or Ask a Data Question</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>sc_cat_item_producer_d0960112dbc9eb00c27f776baf9619c3</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-12 21:49:15</sys_updated_on>
+        <table_name>incident</table_name>
+        <template/>
+        <type>item</type>
+        <u_change_approval_needed>false</u_change_approval_needed>
+        <u_manager_approval_needed>false</u_manager_approval_needed>
+        <u_use_item_task_stages>true</u_use_item_task_stages>
+        <u_use_workflow_stages>false</u_use_workflow_stages>
+        <u_variable_report/>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=d0960112dbc9eb00c27f776baf9619c3"/>
+    <fx_price action="delete_multiple" query="id=d0960112dbc9eb00c27f776baf9619c3"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>d0960112dbc9eb00c27f776baf9619c3</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-10-11 16:37:26</sys_created_on>
+        <sys_id>fc7785dedb89eb00c27f776baf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-10-11 16:37:26</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>d0960112dbc9eb00c27f776baf9619c3</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-10-11 16:37:26</sys_created_on>
+        <sys_id>b07785dedb89eb00c27f776baf9619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-10-11 16:37:26</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#c8ffff</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>icon</file_name>
+        <image_height>38</image_height>
+        <image_width>43</image_width>
+        <size_bytes>1947</size_bytes>
+        <size_compressed>1824</size_compressed>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:59</sys_created_on>
+        <sys_id>49a6e6d0db5663c03662fb5aaf96191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:43:59</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>d0960112dbc9eb00c27f776baf9619c3</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="49a6e6d0db5663c03662fb5aaf96191d">49a6e6d0db5663c03662fb5aaf96191d</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:59</sys_created_on>
+        <sys_id>89a6e6d0db5663c03662fb5aaf96191d</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2420</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="49a6e6d0db5663c03662fb5aaf96191d">49a6e6d0db5663c03662fb5aaf96191d</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:43:59</sys_created_on>
+        <sys_id>0da6e6d0db5663c03662fb5aaf96191d</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#c8ffff</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>picture</file_name>
+        <image_height>38</image_height>
+        <image_width>43</image_width>
+        <size_bytes>1947</size_bytes>
+        <size_compressed>1824</size_compressed>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:44:12</sys_created_on>
+        <sys_id>14b66258db5663c03662fb5aaf9619e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:44:12</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>d0960112dbc9eb00c27f776baf9619c3</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="14b66258db5663c03662fb5aaf9619e7">14b66258db5663c03662fb5aaf9619e7</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:44:12</sys_created_on>
+        <sys_id>54b66258db5663c03662fb5aaf9619e7</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>nZRpONvpFsD/kUQQQkjsZYiW244WRW1lUEsY4+lQ+zatpaFF9SK1TlWbFqWotRUqOlqK1pZSYt9qSEMtsYuqrdOKJSKWTMxzly/3w733d863c973Ob/nfZ/DHefOAWI2llhLAAQCAdm8ALiTgDkA5uM7Sh4QXkIFoFAIBCoEg/ELCAsJC8OF4HARhLiYCAKJgMPFJMWQEig0Gi0sKiUtiZIWR6FRR5eAwLwzEKggFCqIEoGLoP5nuK0AUgA4AZwCg5QBPiQIjARxOwFFAABBQX8B/AMQH29GfpiAoBCc11AnBvCBwGA+CPhoal41llcHIEiouJKmKb/ExV9gyjdQWrfTnwlgzN60oX+mraucvRyWICgkKSUtI3v8hKra305q6+ie09M3ML9gYWlljbVxcLzk5Ozi6nbF188/4Cou8ObfwyMi8bei7iTevUe4/yApI/NxVnZObl5+Mank+W+lL16WVdfU1tWT3zY0tnd0dnX39Pa9Hxr+ODI6Nk6fmGcsfFr8vLS8ssrc2NzaZu2wdzlHXiAADPon/9ELyfPig0DAENiRF4gv8qgBCYEqafKLm16E/XJDQlnrtgDKLP3ZmzZBzNmf19GXw2hCkira88eZR2p/mf13Ygn/l9m/xP7tNQEIg0G8xwMjARPgwKFK7oBkrBcUD9s33sTHt2fiU9fNl+xC5bUl1bBwlV7C7xM2ZL1Lc/u70lW+VQlcIORhpNu6fXea4Brn2MFMZpR2yEnDd65Citm3BD1SSUsyDm0D0XQFcempazi7E3URkTVkO53D+gDq0tu+uVCtCv5hmqfb6kH4MGda0YhdykpkExhcAG3KkJtFByIDdX93m/wSloshU30tWsHyCp/CB2If7H0fN+KlyU7x/olpT/A6bKdh3zI9X9vi1VtlBroZL4m7ZqJ7sIqYhfl4efzZHiev75iiKTHg67GV7LiucKlMbIOuJCcvKFe9fcosyVF37ddF0uQ7HOSmByHZWAtPYtSx8oqpKgYBhFE8o3b9a5pouh/Cw0cg59tTYkXmQBwpuX/FH0Wp2g5HeOrX7kTtNTVSOPTIMfONpwpXnE+Xbxe+0t9c669qHp75TIsYzmMNO2wPJqlVdYpOp+W24M5Mnj6TaJBFvVerjmBsdto0nHN7fEbklevye4RsSNl8rPRWVfofJoFVkoFjOa/ZM6fsFdhxh3Y7Bsbl4mVKK08ifxAWhpk1RbYZfTSw7ykwt0sIEWRP/kjooUiQ8xip/Q6XyU4+8v4TczHMp4Bmb2s3NHA1fV+VfQWRxTh/1nakKeBmhVuBuc1QzA/icrZqnUPtcbTF+mBpLCT3Yp01WH8gjnqnX4Meq2OJj8M1l9S9m7UqxawN99XHYR4OaLo+tHKTTnWxwjfrO01UOI79RMFhhigyhwMcqS5RAXaNx/qJ0hcrBoi6UvXE+qjplAy7AGWviSmTx8wUj8r+WwB807fIKMOqYHrfa322dfe0duE9Y4WsGHPEcnCMO8M9NCSrUSNh+t44zLsJLhbagdEpLI25ysxJ1Z6970Z8VunRpZ5GmNPVGCfTn1V3l5f+qnSh9UeElv5CRmCQYpqbVGeyS21LMkdwlO5oIZq0leWi437jQ8jCtdXz0lFEu+vCusdtQsQLrL1dSiv7Y6WMC47V02tkGK8rNVycXjoGYXVII3+UfxpzL//WaGW7fof1hVl1+6vkWNf3Mxo0+sZAaFswo+9TSe4uQXUxNBpwdJ4+RLIbivHDHVFxZD9cRQ8uWuqJ7ADJMxisEuak6zD8QkWhc2yJC3TaKsIO+ymnPhoZknAVvO8t7/rYfzR8WepLhCHNN62vHvJARWg1stcaElrXGh+CJ3ULcwZJrwJzxsjXqOodXnpTppgin6N1Iw34OD9J6QvNK3bJR7JuxEZ8btmJilrebyQS4UbdfnbzbyRY1Z7nFsk7jS3qzoXmX71TFd+oJlJUdQZfFl1fL71fcnzCFr8ZFNpTOHPBeEWVnXkMq/QQr0ow8W12Z9zlAonachWBVLv6D9quRS1E9C1PKotSrCn+qGgJlo1RIDxHOQ8uNvym6VNmcnVWtSPaMLr6a+xpvywfokE+CxdtnzTmvEMa56y1mtTYd1AJFJl3tGtN50Pi0VvGFtvdJclGY7aPxiMwQPCl62UA1LTbMugzdUKOhR7aOq/owLRPCD/zZc3WOp+xYP1RpoAv1T7rOyhhr6Jw5y7KOS/LH9+7UHxQvjPRvN0yE5VX75yQzYcb8mJE1GfvpZZ3zVZ7eMu14ERl2cnuI5T++cmgZD3ZwWETXMHo+6lHLinKG/oyqkSYG+ecGRs71yKyItnoXzgfe1LO0Jcuq1NsPT4Y5nrbXyUDq5KZr1YZ0yH3IP+5xcBGt1g1FyBfpOX4hH4IDyoLIjoUzHxjxFK59D8B990y6ZsHAAA=</data>
+        <length>2420</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="14b66258db5663c03662fb5aaf9619e7">14b66258db5663c03662fb5aaf9619e7</sys_attachment>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-12-06 21:44:12</sys_created_on>
+        <sys_id>d4b66258db5663c03662fb5aaf9619e7</sys_id>
+    </sys_attachment_doc>
+</record_update>

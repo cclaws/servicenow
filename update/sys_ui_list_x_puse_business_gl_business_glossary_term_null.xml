@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_puse_business_gl_business_glossary_term" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>7f2f94b3dbcaeb80c27f776baf9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_name</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>f32f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_description_definition</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>772f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_status</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>f72f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>business_value_purpose</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>7b2f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>data_domain_and_or_sub_domain</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>fb2f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>synonym_and_or_screen_name</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>7f2f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>acronym</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>ff2f94b3dbcaeb80c27f776baf9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_alias_name_or_synonym</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>732f94b3dbcaeb80c27f776baf9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>notes</element>
+            <list_id display_value="x_puse_business_gl_business_glossary_term" element="NULL" name="x_puse_business_gl_business_glossary_term" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f32f94b3dbcaeb80c27f776baf9619bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_id>f32f94b3dbcaeb80c27f776baf9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_puse_business_gl_business_glossary_term</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>PA-claws</sys_created_by>
+            <sys_created_on>2018-12-04 22:35:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>f32f94b3dbcaeb80c27f776baf9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_puse_business_gl_business_glossary_term</sys_name>
+            <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+            <sys_update_name>sys_ui_list_x_puse_business_gl_business_glossary_term_null</sys_update_name>
+            <sys_updated_by>PA-claws</sys_updated_by>
+            <sys_updated_on>2018-12-04 22:35:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

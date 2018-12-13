@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Business Glossary Term">cb6346c7db74ab40c27f776baf96192e</application>
+        <filter/>
+        <name>Business Glossary Terms</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_puse_business_gl.business_glossary_ter</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-10-01 18:39:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8b6346c7db74ab40c27f776baf961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Business Glossary Terms</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>sys_ui_module_8b6346c7db74ab40c27f776baf961930</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-10-01 18:39:13</sys_updated_on>
+        <table>x_puse_business_gl_business_glossary_term</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

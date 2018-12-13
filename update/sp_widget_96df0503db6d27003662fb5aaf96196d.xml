@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+	 var c = this;
+	 //c.title = "My Widget";
+	 c.title = 'Please upload screen shots as applicable.';
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Data Glossary Help</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Data Glossary Help</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-11-07 21:43:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>96df0503db6d27003662fb5aaf96196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Glossary Help</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_update_name>sp_widget_96df0503db6d27003662fb5aaf96196d</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-11-07 21:43:10</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  	color: white;
+  	background-color: #3399ff;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>{{c.title}}</th>
+  </tr>
+</table>
+
+</body>
+</html>]]></template>
+    </sp_widget>
+</record_update>

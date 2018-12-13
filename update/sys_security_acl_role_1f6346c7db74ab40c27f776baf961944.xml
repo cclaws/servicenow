@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>PA-claws</sys_created_by>
+        <sys_created_on>2018-10-01 18:39:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1f6346c7db74ab40c27f776baf961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_puse_business_gl_business_glossary_term.x_puse_business_gl.business_glossary_term_user</sys_name>
+        <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
+        <sys_security_acl display_value="x_puse_business_gl_business_glossary_term">436346c7db74ab40c27f776baf961933</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1f6346c7db74ab40c27f776baf961944</sys_update_name>
+        <sys_updated_by>PA-claws</sys_updated_by>
+        <sys_updated_on>2018-10-01 18:39:13</sys_updated_on>
+        <sys_user_role display_value="x_puse_business_gl.business_glossary_term_user" name="x_puse_business_gl.business_glossary_term_user">4f630287db74ab40c27f776baf9619d5</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
