@@ -23,14 +23,14 @@
         <sys_created_by>PA-claws</sys_created_by>
         <sys_created_on>2018-09-10 17:48:12</sys_created_on>
         <sys_id>075e2d90dbacef403662fb5aaf96197e</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_updated_by>PA-claws</sys_updated_by>
-        <sys_updated_on>2018-12-12 21:49:32</sys_updated_on>
+        <sys_updated_on>2018-12-14 21:34:05</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="x_puse_business_gl.business_glossary_term_user" name="x_puse_business_gl.business_glossary_term_user">4f630287db74ab40c27f776baf9619d5</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.9</version>
+        <version>1.0.10</version>
     </sys_app>
 </record_update>
