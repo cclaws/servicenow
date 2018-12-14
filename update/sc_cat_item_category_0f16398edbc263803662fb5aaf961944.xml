@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Add or Change a Business Glossary Term 2">b3e3bd0adbc263803662fb5aaf961965</sc_cat_item>
+        <sc_cat_item display_value="Add or Change a Business Glossary Term">b3e3bd0adbc263803662fb5aaf961965</sc_cat_item>
         <sc_category display_value="Data Services">2208f940db416300c27f776baf96190b</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>PA-claws</sys_created_by>

@@ -16,21 +16,21 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_puse_business_gl</source>
-        <store_correlation_id>REPOAPP0000092596</store_correlation_id>
+        <store_correlation_id>REPOAPP0000092598</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>PA-claws</sys_created_by>
         <sys_created_on>2018-09-10 17:48:12</sys_created_on>
         <sys_id>075e2d90dbacef403662fb5aaf96197e</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_updated_by>PA-claws</sys_updated_by>
-        <sys_updated_on>2018-12-14 21:42:44</sys_updated_on>
+        <sys_updated_on>2018-12-14 21:55:16</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="x_puse_business_gl.business_glossary_term_user" name="x_puse_business_gl.business_glossary_term_user">4f630287db74ab40c27f776baf9619d5</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
     </sys_app>
 </record_update>
