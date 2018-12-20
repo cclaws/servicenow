@@ -11,7 +11,7 @@
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description><![CDATA[<p>Use this form to make a request for a new term to be added or changed in the business glossary.&nbsp; The typical response turnaround time is approximately 2 weeks.</p>
-<p>If you have other data related issues please use the&nbsp;<a title="Fix a Data Issue" href="https://psedev.service-now.com/sp?id=sc_cat_item&amp;sys_id=d0960112dbc9eb00c27f776baf9619c3&amp;sysparm_category=2208f940db416300c27f776baf96190b" target="_blank">Fix a Data Issue</a> form.</p>
+<p>If you have other data related issues please use the&nbsp;<a title="Fix a Data Issue" href="https://pse.service-now.com/sp?id=sc_cat_item&amp;sys_id=d0960112dbc9eb00c27f776baf9619c3&amp;sysparm_category=2208f940db416300c27f776baf96190b" target="_blank">Fix a Data Issue</a> form.</p>
 <p>To search for existing glossary terms use the&nbsp;<a title="Metapedia" href="http://ssapbdprd1:8080/BOE/InfoStewardApp/1601142019/ICCExplorer/logon.do" target="_blank">Metapedia</a> application.</p>]]></description>
         <entitlement_script/>
         <group/>
@@ -53,7 +53,7 @@
         <sys_created_on>2018-11-29 18:16:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b3e3bd0adbc263803662fb5aaf961965</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Add or Change a Business Glossary Term</sys_name>
         <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
         <sys_policy/>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
         <sys_update_name>sc_cat_item_b3e3bd0adbc263803662fb5aaf961965</sys_update_name>
         <sys_updated_by>PA-claws</sys_updated_by>
-        <sys_updated_on>2018-12-19 23:10:40</sys_updated_on>
+        <sys_updated_on>2018-12-20 00:14:21</sys_updated_on>
         <template/>
         <type>item</type>
         <u_change_approval_needed>false</u_change_approval_needed>
