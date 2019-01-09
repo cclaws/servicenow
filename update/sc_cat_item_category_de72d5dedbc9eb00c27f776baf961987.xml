@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Fix a Data Issue or Ask a Data Question">d0960112dbc9eb00c27f776baf9619c3</sc_cat_item>
+        <sc_cat_item display_value="Fix a Data Issue, Ask a Data Question, or Request a Data Services Consultation">d0960112dbc9eb00c27f776baf9619c3</sc_cat_item>
         <sc_category display_value="Data Services">2208f940db416300c27f776baf96190b</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>PA-claws</sys_created_by>

@@ -28,7 +28,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Fix a Data Issue or Ask a Data Question</name>
+        <name>Fix a Data Issue, Ask a Data Question, or Request a Data Services Consultation</name>
         <no_cart>false</no_cart>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
@@ -80,6 +80,10 @@ if (producer.request_type == 'question_or_other') {
 	current.u_category.setValue('f38fbf38db316b00c27f776baf961922'); // Data > Other
 	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
 }
+if (producer.request_type == 'consult') {
+	current.u_category.setValue('f38fbf38db316b00c27f776baf961922'); // Data > Other
+	current.assignment_group.setValue('795eaf6bdba123003662fb5aaf961909'); //Data Services
+}
 
 current.description = producer.issue;
 current.comments = 'The issue started at: ' + producer.issue_start_date;
@@ -115,15 +119,15 @@ producer.redirect = "catalog_home.do?sysparm_view=catalog_default";]]></script>
         <sys_created_on>2018-10-11 16:37:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d0960112dbc9eb00c27f776baf9619c3</sys_id>
-        <sys_mod_count>29</sys_mod_count>
-        <sys_name>Fix a Data Issue or Ask a Data Question</sys_name>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Fix a Data Issue, Ask a Data Question, or Request a Data Services Consultation</sys_name>
         <sys_package display_value="Business Glossary Term" source="x_puse_business_gl">075e2d90dbacef403662fb5aaf96197e</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business Glossary Term">075e2d90dbacef403662fb5aaf96197e</sys_scope>
         <sys_update_name>sc_cat_item_producer_d0960112dbc9eb00c27f776baf9619c3</sys_update_name>
         <sys_updated_by>PA-claws</sys_updated_by>
-        <sys_updated_on>2018-12-20 00:14:17</sys_updated_on>
+        <sys_updated_on>2019-01-09 20:33:33</sys_updated_on>
         <table_name>incident</table_name>
         <template/>
         <type>item</type>

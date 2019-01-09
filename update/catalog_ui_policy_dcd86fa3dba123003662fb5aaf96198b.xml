@@ -8,7 +8,7 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions>IO:d5e8cd47db2d27003662fb5aaf961938=business_glossary^EQ</catalog_conditions>
-        <catalog_item display_value="Fix a Data Issue or Ask a Data Question">d0960112dbc9eb00c27f776baf9619c3</catalog_item>
+        <catalog_item display_value="Fix a Data Issue, Ask a Data Question, or Request a Data Services Consultation">d0960112dbc9eb00c27f776baf9619c3</catalog_item>
         <conditions/>
         <description/>
         <global>true</global>
